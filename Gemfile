@@ -9,18 +9,20 @@ group :development, :test do
 	gem 'rspec-rails'
 end
 
+group :test do
+  gem 'selenium-webdriver'
+  gem 'capybara'
+end
+
 # Use SCSS for stylesheets
 gem 'sass-rails' 
+gem 'slim-rails'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier'
 
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails'
-
-group :test do
-  gem 'capybara'
-end
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
