@@ -20,6 +20,7 @@ gem 'slim-rails'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier'
+gem 'pg', '0.15.1'
 
 # Use CoffeeScript for .js.coffee assets and views
 gem 'coffee-rails'
@@ -42,7 +43,6 @@ group :doc do
 end
 
 group :production do
-  gem 'pg', '0.15.1'
   gem 'rails_12factor', '0.0.2'
 end
 
