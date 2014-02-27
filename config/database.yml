@@ -8,7 +8,7 @@ development:
   password:
   host: localhost
 
-test:
+test: &test
   adapter: postgresql
   database: sample_app_test
   username: Jeremy
@@ -38,3 +38,6 @@ test:
 #   database: db/production.sqlite3
 #   pool: 5
 # timeout: 5000
+
+cucumber:
+  <<: *test
