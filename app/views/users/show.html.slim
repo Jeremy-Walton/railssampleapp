@@ -3,8 +3,7 @@ div.row
   aside.span4
     section
       h1
-        == gravatar_for @user
-        == @user.name
+        == render 'shared/gravatar', user: @user
   div.span8
     == render 'follow_form' if signed_in?
     - if @user.microposts.any?

@@ -2,8 +2,7 @@
 div.row
   aside.span4
     section
-      == gravatar_for @user
-      h1 #{@user.name}
+      == render 'shared/gravatar', user: @user
       span
         == link_to "view my profile", @user
       span 
